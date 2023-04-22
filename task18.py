@@ -12,12 +12,12 @@ print(A)
 X = int(input("X: "))
 
 
-min = abs(X - A[0])
+different = abs(X - A[0])
 index = 0
 for i in range(1, N):
     count = abs(X - A[i])
-    if count < min:
-        min = count
+    if count < different:
+        different = count
         index = i
 
 print(f"close value {A[index]}")
